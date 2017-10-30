@@ -8,6 +8,8 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
+var scoreDisplay = document.querySelector("#scoreDisplay");
+var	score = 0;
 
 easyBtn.addEventListener("click", function() {
 	easyBtn.classList.add("selected");
@@ -66,9 +68,13 @@ for(var i = 0; i < squares.length; i++){
 			resetButton.textContent = "Play Again?";
 			changeColors(clickedColor);
 			h1.style.background = clickedColor;
+			score+=3;
+			scoreDisplay.textContent=score;
 		} else {
 			this.style.background = "#232323";
 			messageDisplay.textContent = "Try Again";
+			score+=-1;
+			scoreDisplay.textContent=score;
 		}
 	});
 }
