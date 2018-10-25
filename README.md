@@ -9,5 +9,5 @@ All the rgb colors are chosen randomy.
 ### JavaScript
 Mainly JS is used to code the game. Styling and formatting is done using CSS and HTML. 
 
-##Contribute
-Contribute and add new features to the game. A big thank you in advanc. 
+## Contribute
+Contribute and add new features to the game. A big thanks in advanc. 
